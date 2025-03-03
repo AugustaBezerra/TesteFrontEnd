@@ -1,0 +1,438 @@
+#root {
+  margin: 0 auto;
+  width: 100%;
+  height: fit-content;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #18181B;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.bottomScreen{
+  background-color: #18181B ;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 20px;
+  right: 30px;
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 15px;
+  z-index: 1000;
+  gap: 10px;
+  background-color: #18181B;
+}
+
+.FatherContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #18181B;
+}
+
+
+.container{
+  max-width: 1080px;
+}
+
+.main-container{
+  padding: 10px;
+  max-width: 1200px;
+  text-align: left;
+  margin-top: 150px;
+  justify-content: left;
+
+}
+
+.containerMS{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.name{
+  max-width: 392;
+  letter-spacing: -.4px;
+  line-height: 30px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+
+.roundcard{
+  width: 130px;
+  height: 40px;
+  border: none;
+  background-color: #9e1a34;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: ease 0.2s;
+}
+
+.roundcard:hover{
+  filter: brightness(150%);
+}
+
+.roundContainer{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 8px;
+    padding: 10px;
+    width: 100%;
+}
+
+.seachIcons{
+  width: 400px;
+  height: 15px;
+  background-color: #2b2b30;
+  display: flex;
+  box-shadow: 0px 4px 6px rgba(102, 79, 79, 0.2);
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  text-align: left;
+  image-orientation: left;
+  padding: 9px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: border 0.2s ease;
+}
+
+.seachIcons:hover{
+  border: 2px solid #f59794;
+
+}
+
+.lupaIcon{
+  width: 24px; 
+  height: 24px; 
+}
+
+.iconsUp{
+  width: 24px; 
+  height: 24px; 
+}
+
+.iconsUp:hover{
+  filter: brightness(150%);
+}
+
+.vertext{
+  top: 80px; 
+  left: 20px; 
+  font-size: 14px;
+  color: white; 
+  background-color: #161616;
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  display: inline-block; 
+  width: auto;
+  text-align: center; 
+}
+
+.rectanglecard{
+  width: 300px;
+  height: 180px;
+  border: none;
+  background-color: #2b2b30;
+  border-radius: 10%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(102, 79, 79, 0.1);
+  padding: 20px;
+
+}
+
+.rectanglecard h3{
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.rectanglecard p{
+  font-size: 14px;
+  font-weight: normal;
+  color: #d2d2d2;
+  line-height: 1.4;
+  text-align: left;
+  width: 100%;
+}
+
+.rectangleIcon{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.rectangleIcon img{
+  width: 80%;
+  height: auto;
+}
+
+.rectangleContainer{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.Textocolor {
+  color: rgb(194, 195, 199); 
+  transition: color 0.3s ease; 
+}
+
+.Textocolor:hover {
+  color: #e77f7b; 
+}
+
+.btn-abrir-menu{
+  display: none;
+}
+
+@media screen and (max-width:1020px){
+  /* Classes gerais*/
+  .main-container{
+    flex-direction: column ;
+  }
+
+  
+
+
+  /* Cabeçalho*/
+
+  .header img{
+    position: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  
+  .header li{
+    display: none;
+  }
+
+
+  .vertext{
+    font-size: 12px;
+    display: inline-block;
+    flex-direction: column; 
+    width: auto;
+    text-align: center; 
+   position:absolute;
+
+  }
+
+  .name{
+    font-size: 30px;
+    line-height: 20px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+  }
+
+  .h2{
+    font-size: 10px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+
+  }
+  .seachIcons{
+    width: 290px;
+    height: 12px;
+    font-size: 12px;
+  }
+  
+  
+  .lupaIcon{
+    width: 16px; 
+    height: 16px; 
+  }
+  
+  .iconsUp{
+    width: 24px; 
+    height: 24px; 
+  }
+  
+
+  /* Estilo do Menu mobile*/
+  .btn-abrir-menu{
+    display: block;
+  }
+  
+  .btn-abrir-menu img{
+    position: absolute;
+    top: 12px;
+    right: 24px;
+    height: 40px;
+    display: flex;
+    z-index: 1001;
+
+  }
+
+  .overlay-menu{
+    background-color: #18181B;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    opacity: 50%;
+    display: none;
+  }
+  .menu-mobile{
+    background-color:#18181B;
+    height: 100vh;
+    width: 70%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: .5s;
+  }
+  .menu-mobile.btn-abrir-menu ~ .overlay-menu{
+    display: block;
+
+  }
+
+ .menu-mobile .btn-fechar img {
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 200px;
+    display: flex;
+    z-index: 1001;
+
+  }
+
+  .btn-fechar img {
+    padding: 20px 5%;
+  }
+  .menu-mobile nav ul{
+    text-align: right;
+  }
+
+  .menu-mobile nav ul li{
+    font-size: 20px;
+    font-weight: 300px;
+    padding: 10px 15%;
+    list-style-type: none;
+    display: block;
+  }
+  .menu-mobile nav ul li:hover{
+    background-color: #9e1a34;
+    color: #d2d2d2;
+    font-weight: bold;
+  }
+
+  .containerMS{
+    margin-top: 5px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .roundContainer{
+
+      gap: 4px;
+      padding: 10px;
+      width: 90%;
+      font-size: 12px;
+      
+  }
+
+  .container{
+    max-width: 1020px;
+  }
+  
+  .rectangleContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .rectanglecard{
+    width: 250px;
+    height: 170px;
+    border-radius: 10%;
+    cursor: pointer;
+    padding: 15px;
+  
+  }
+  
+  .rectanglecard h3{
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  
+  .rectanglecard p{
+    font-size: 12px;
+    width: 100%;
+  }
+
+
+  .FatherContainer{
+    margin-bottom: 20px;
+  }
+}
