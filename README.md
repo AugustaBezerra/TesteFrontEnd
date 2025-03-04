@@ -1,5 +1,5 @@
 
-# Instructions
+# Instruções
 
 Instruções para Configuração e Execução do Projeto Teste
 
