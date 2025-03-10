@@ -1,4 +1,10 @@
 import React from "react";
+import { Aperture, User } from 'lucide-react';
+import { Palette } from 'lucide-react';
+import { PackageCheck } from 'lucide-react';
+import { Expand } from 'lucide-react';
+import { TreeDeciduous } from 'lucide-react';
+import { Users } from 'lucide-react';
 
 
 //import Pesquisa from "./searc";
@@ -13,17 +19,12 @@ function MainPage(){
             <div className="containerMS container">
                 <main className="main-container">
                     <p className="vertext">v0.476.0</p>
-                    <h1 className="name"> <span style={{color:"RGB(245,151, 148)"}}>Beautiful & </span></h1>
+                    <h1 className="name"> <span style={{color:"#F56565"}}>Beautiful & </span></h1>
                     <h1 className="name">consistent icons</h1>
-                    <h2 style={{color: "#d2d2d2"}}>  Made by the community</h2>
+                    <h2 style={{color: "#d2d2d2", lineHeight:"36px", fontSize:"24px"}}>  Made by the community</h2>
                 </main>
-
-                <div className="seachIcons">
-                    <img className="lupaIcon" src="/lupa.png" alt="lupa" />
-                    <p>Search 1556 icons...</p>
-                
-                </div>
             </div>
+
 
              <div className="btn-abrir-menu" id="btn-menu"
              onClick={()=>setIsOpen(true)}> 
@@ -49,7 +50,6 @@ function MainPage(){
                                 <li className="Textocolor">License</li>
                                 <li>  darkmode </li>
                             </ul>
-                            <img className="iconsUp" src="/GitHub.png" alt="Símbolo do GitHub" style={{marginInline: "10px"}} />
         
                             <img className="iconsUp" src="/discord.png" alt="Símbolo do Discord" />
                         </nav>
@@ -62,20 +62,41 @@ function MainPage(){
 
             <div className="overlay-menu"></div>
 
+        <div className="ColumnContainer">
 
-            <div className="roundContainer container">
+             <div className="roundContainer container">
                 <p className="roundcard">View all icons</p>
                 <p className="roundcard" style={{background:"#2b2b30"}}>Get Started</p>
                 <p className="roundcard" style={{background:"#2b2b30"}}>GitHub</p>
-                
+
+
             </div>
+            <div className="seachIcons">
+                        <img className="lupaIcon" src="/lupa.png" alt="lupa" />
+                        <input 
+                            type="search" 
+                            id="search" 
+                            placeholder="Search 1556 icons..." 
+                        />
+            </div>
+
+            <div className="content">
+
+            </div>
+                
+
+        </div>
+
 
 
             <div className="rectangleContainer container">
                 <div className="rectanglecard">
-                    <div className="rectangleIcon"><img 
-                    src="/rec1.png" 
-                    alt="Setas para fora."/></div>
+                    <div className="rectangleIcon">
+                        <Expand style={{width:"24", height:"24", viewBox:"0 0 24 24", fill:"none", 
+                            stroke:"#F56565", strokewidth:"2", strokeLinecap:"round",
+                            strokeLinejoin:"round"
+                        }} />
+                    </div>
 
                     <h3>Lightweight & Scalable</h3>
                     <p>Icons are Lightweight, highly optimized Scalable
@@ -85,9 +106,11 @@ function MainPage(){
                 </div>
 
                 <div className="rectanglecard">
-                    <div className="rectangleIcon"><img 
-                    src="/rec2.png" 
-                    alt="Círculo."/></div>
+                    <div className="rectangleIcon">
+                        <Aperture style={{width:"24", height:"24", viewBox:"0 0 24 24", fill:"none", 
+                         stroke:"#F56565", strokewidth:"2", strokeLinecap:"round",
+                        strokeLinejoin:"round"
+                    }} /></div>
 
                     <h3>Clean & consistent</h3>
                     <p>Designed with a strict set of design rules for
@@ -97,9 +120,12 @@ function MainPage(){
                 </div>
                 
                 <div className="rectanglecard">
-                    <div className="rectangleIcon"><img 
-                    src="/rec3.png" 
-                    alt="Pallete."/></div>
+                    <div className="rectangleIcon">
+                    <Palette style={{width:"24", height:"24", viewBox:"0 0 24 24", fill:"none", 
+                         stroke:"#F56565", strokewidth:"2", strokeLinecap:"round",
+                        strokeLinejoin:"round"
+                    }} />
+                    </div>
 
                     <h3>Customizable</h3>
                     <p>Customize the color, size, stroke width, and more.
@@ -110,9 +136,11 @@ function MainPage(){
 
             <div className="rectangleContainer container" style={{marginTop: "20px", marginbottom: "20px"}}>
                 <div className="rectanglecard">
-                    <div className="rectangleIcon"><img 
-                         src="/rec4.png" 
-                        alt="Packages"/>
+                    <div className="rectangleIcon">
+                        <PackageCheck style={{width:"24", height:"24", viewBox:"0 0 24 24", fill:"none", 
+                            stroke:"#F56565", strokewidth:"2", strokeLinecap:"round",
+                            strokeLinejoin:"round"
+                        }} />
                     </div>
 
                     <h3>Packages support</h3>
@@ -123,10 +151,12 @@ function MainPage(){
                     </div>
 
                     <div className="rectanglecard">
-                    <div className="rectangleIcon"><img 
-                         src="/rec5.png" 
-                        alt="Notification"/>
-                    </div>
+                        <div className="rectangleIcon">
+                            <TreeDeciduous style={{width:"24", height:"24", viewBox:"0 0 24 24", fill:"none", 
+                                    stroke:"#F56565", strokewidth:"2", strokeLinecap:"round",
+                                    strokeLinejoin:"round"
+                                }} />
+                        </div>
 
                     <h3>Tree Shakable</h3>
                     <p>
@@ -136,10 +166,12 @@ function MainPage(){
                     </div>
 
                     <div className="rectanglecard">
-                    <div className="rectangleIcon"><img 
-                         src="/rec6.png" 
-                        alt="Group"/>
-                    </div>
+                        <div className="rectangleIcon">
+                            <Users style={{width:"24", height:"24", viewBox:"0 0 24 24", fill:"none", 
+                                        stroke:"#F56565", strokewidth:"2", strokeLinecap:"round",
+                                        strokeLinejoin:"round"
+                                    }} />
+                        </div>
 
                     <h3>Active community</h3>
                     <p>
