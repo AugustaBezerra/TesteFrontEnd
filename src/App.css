@@ -203,7 +203,7 @@
 
 }
 
-.iconsUp a{
+.iconsUp a img{
   width: 20px;
   height: 20px;
   display: flex;
@@ -213,7 +213,7 @@
   transition: color .5s;
 }
 
-.iconsUp a:hover{
+.iconsUp a img:hover{
   filter: brightness(150%);
 }
 

@@ -32,7 +32,7 @@ const MenuHead = () => {
                     className="iconsUp"/>
                     <Github size={20} />
                 </li>
-                <li><a  className="iconsUp" href=""><img src="discord.png" alt="" style={{opacity:"60%", width:"24px", height:"24px" }} /></a></li>
+                <li><a  className="iconsUp" href=""><img src="discord.png" alt="" style={{opacity:"10%", width:"24px", height:"24px" }} /></a></li>
 
             </ul>
         </nav>
